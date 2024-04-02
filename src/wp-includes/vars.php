@@ -131,7 +131,7 @@ $is_nginx = ( str_contains( $_SERVER['SERVER_SOFTWARE'], 'nginx' ) );
  *
  * @global bool $is_caddy
  */
-$is_caddy = ( str_contains( $_SERVER['SERVER_SOFTWARE'], 'Caddy' ) );
+$is_caddy = ( str_contains( $_SERVER['SERVER_SOFTWARE'], 'Caddy' ) || str_contains( $_SERVER['SERVER_SOFTWARE'], 'FrankenPHP' ) ;
 
 /**
  * Whether the server software is IIS or something else.
